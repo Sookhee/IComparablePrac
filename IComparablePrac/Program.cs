@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace IComparablePrac
 {
+    class TestClass : IBasic
+    {
+        public int TestProperty {
+            get => 0;
+            set => value = 0;
+        }
+
+        public int TestInstanceMethod()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     class Product : IComparable
     {
         public string Name { get; set; }
